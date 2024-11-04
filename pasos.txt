@@ -1,0 +1,62 @@
+librerias
+    restframework
+    corsheaders
+    Pillow
+    restframework_simple_jwt
+    django-environ
+
+settings
+    configurar el env
+
+
+
+modelos crear
+    crear el modelo usuario
+    crear el modelo ContraseñaSoloUso
+crear el managers.py
+    crear el usuario
+    crear el superusuario
+crear los serializadores
+    -> crear el registro
+    -> validar la contraseña
+    -> validar el registro
+    -> autenticacion
+    -> resetear contraseña
+crear la vista
+    -> registro
+    -> validacion del email
+    -> autenticacion
+    -> resetear contraseña => en utils crear send_normal_email()
+
+
+
+======================================
+configuracion del restframework_simple_jwt
+======================================
+REST_FRAMEWORK = {
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+
+}
+
+
+
+VUE
+crear proyecto
+instalar typescript, router, pinia, tailwindcss, axios
+en src crear modules y crear el modulo a crear auth
+    crear la vistas, componenetes, interfaces, layouts routes en auth
+    crear la url del module, se crea url padre 
+    crear despues la url hijas login, register, etc
+
+
+
+instalar axios
+crear una carpeta api para las configuraciones de la url del backend
+en la carpeta actions si no esta crearla, crear un archivo login.action.ts
+    se instancia la url de la api con los datos que vienen del backend del login.
+
+se crea una carpeta interfaces, crear archivo auth.response.ts y se crea el objeto de la api del login email, password etc.
